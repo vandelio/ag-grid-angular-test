@@ -1,9 +1,13 @@
 <button (click)="clearSelection()">Clear selection</button>
+<button (click)="autoSizeAll(true)">autoSizeAll skip header true</button>
+<button (click)="autoSizeAll(false)">autoSizeAll</button>
+<button (click)="sizeToFit()">sizeToFit</button>
+
 <ag-grid-angular
   style="width: 100%; height: 100%;"
   class="ag-theme-alpine"
   [columnDefs]="columnDefs"
-  [rowData]="rowData$ | async"
+  [rowData]="rowData"
   [rowSelection]="'multiple'"
   [animateRows]="true"
   (gridReady)="onGridReady($event)"
