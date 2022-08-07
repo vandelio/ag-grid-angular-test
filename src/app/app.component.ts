@@ -11,8 +11,6 @@ import {
   GridApi,
   GridReadyEvent,
 } from 'ag-grid-community';
-import 'ag-grid-community/styles/ag-grid.css';
-import 'ag-grid-community/styles/ag-theme-alpine.css';
 
 import { ICarData } from './interfaces';
 
@@ -22,6 +20,7 @@ import { ICarData } from './interfaces';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  
   private gridApi!: GridApi;
   private gridColumnApi!: ColumnApi;
 
@@ -31,6 +30,7 @@ export class AppComponent {
     { field: 'company' },
     { field: 'email' },
     { field: 'phone' },
+    { field: 'age' },
     {
       field: 'about',
       resizable: true,

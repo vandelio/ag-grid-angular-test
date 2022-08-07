@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { __decorate } from \"tslib\";\nimport { State } from '@ngxs/store';\nlet TodoState = class TodoState {};\nTodoState = __decorate([State({\n  name: 'todo',\n  defaults: {\n    todoList: []\n  }\n})], TodoState);\nexport { TodoState };","map":null,"metadata":{},"sourceType":"module"}
